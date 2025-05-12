@@ -12,8 +12,7 @@ resource "random_password" "password" {
 
 module "munki-repo" {
   source          = "spacelift.io/anywhereops/terraform-aws-munki-repo/aws"
-
-  version         = "0.3.0"
+  version         = "0.1.0"
   munki_s3_bucket = var.munki_s3_bucket
   username        = random_password.password.result
   password        = random_password.password.result
