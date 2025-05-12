@@ -10,9 +10,9 @@ output "munki_bucket_id" {
 }
 
 output "username" {
-  value = module.munki-repo.username
+  value = module.munki-repo.username.result
 }
 
 output "password" {
-  value = module.munki-repo.password
+  value = module.munki-repo.password.result
 }
