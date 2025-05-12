@@ -12,7 +12,3 @@ provider "aws" {
   region = "us-east-1"
 }
 
-# NOTE: currently the _only_ supported provider region is us-east-1.
-provider "aws" {
-  region  = "us-east-1"
-}
