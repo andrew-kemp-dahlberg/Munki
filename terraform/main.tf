@@ -19,6 +19,6 @@ module "munki-repo" {
   munki_s3_bucket = var.munki_s3_bucket
   username        = nonsensitive(random_password.password.result)
   password        = nonsensitive(random_password.password.result)
-  prefix          = var.prefix
+  prefix          = "anywhereops"
   price_class     = var.price_class
 }
