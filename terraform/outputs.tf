@@ -11,10 +11,9 @@ output "munki_bucket_id" {
 
 output "username" {
   value = module.munki-repo.username
-  sensitive = true
 }
 
 output "password" {
   value = module.munki-repo.password
-  sensitive = true
+  
 }
