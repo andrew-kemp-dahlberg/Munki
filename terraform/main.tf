@@ -14,7 +14,7 @@ module "munki-repo" {
   source          = "spacelift.io/anywhereops/munki-repo/aws"
   version         = "0.1.0"
   providers = {
-    aws = aws.use1
+    aws = aws
   }
   munki_s3_bucket = var.munki_s3_bucket
   username        = random_password.password.result
